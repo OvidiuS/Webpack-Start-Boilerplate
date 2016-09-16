@@ -1,13 +1,26 @@
-@import "~susy/sass/susy";
+@import '~susy/sass/susy';
+@import '~breakpoint-sass/stylesheets/breakpoint';
+@import '~breakpoint-slicer/stylesheets/breakpoint-slicer';
+
+$slicer-breakpoints:        0        400px       600px      800px        1050px;
+
+//                          └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘ └────┬────
+// Slice numbers:                1           2           3           4           5
 
 $color: #ff0;
-
-
+$color2: #f00;
 
 body {
-  @include container(80em);
-  background-color: $color;
-  display: flex;
+  @include container(80em); // to test susy
+
+  @include at(3) { //  to test breakpoint-slicer
+    background-color: $color2;
+	}
+
+  background-color: $color; // to test sass
+  display: flex; // to test prefixer
 }
 
-nav { @include span(25%); }
+nav {
+  @include span(25%);
+}
