@@ -10,7 +10,6 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.4.1",
-    "breakpoint": "^0.1.6",
     "breakpoint-slicer": "^2.0.0",
     "browser-sync": "^2.16.0",
     "browser-sync-webpack-plugin": "^1.1.2",
