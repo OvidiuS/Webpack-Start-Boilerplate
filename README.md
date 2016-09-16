@@ -29,4 +29,9 @@ Just clone and run:
 $ npm install.
 ```
 
+Then, to start the browser-sync server, do:
+```sh
+$ webpack --progress --colors --watch
+```
+
 More documentation coming.
