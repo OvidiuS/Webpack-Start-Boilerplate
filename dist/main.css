@@ -1,7 +1,19 @@
 body {
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #ff0;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+nav {
+  width: 25%;
+  float: left;
+  margin-right: 5.26316%; }
 
 /*# sourceMappingURL=main.css.map*/
