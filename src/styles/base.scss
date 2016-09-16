@@ -1,8 +1,8 @@
 @import '~susy/sass/susy';
-@import '~breakpoint';
-@import '~breakpoint-slicer';
+@import '~breakpoint-sass/stylesheets/breakpoint';
+@import '~breakpoint-slicer/stylesheets/breakpoint-slicer';
 
-$slicer-breakpoints:        0        400px       600px      800px        1050px
+$slicer-breakpoints:        0        400px       600px      800px        1050px;
 
 //                          └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘ └────┬────
 // Slice numbers:                1           2           3           4           5
