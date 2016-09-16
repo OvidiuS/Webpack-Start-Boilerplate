@@ -14,12 +14,11 @@ Curently included in the master:
 * browser-sync
 * browser-sync-webpack-plugin
 * susy
-* 
-
-## To come
 * breakpoint
 * breakpoint-slicer
-* Vagrant (scotch-box) integratio - mainly for browser-sync proxy stuff
+
+## To come
+* Vagrant (scotch-box) integration - mainly for browser-sync proxy stuff
 
 
 ## Usage
@@ -30,10 +29,9 @@ Just clone and run:
 $ npm install.
 ```
 
-then to start the browser-sync server, do: 
+Then, to start the browser-sync server, do:
 ```sh
 $ webpack --progress --colors --watch
 ```
-
 
 More documentation coming.
