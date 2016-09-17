@@ -1,6 +1,8 @@
 @import '~susy/sass/susy';
 @import '~breakpoint-sass/stylesheets/breakpoint';
 @import '~breakpoint-slicer/stylesheets/breakpoint-slicer';
+//@import '~sass-toolkit/stylesheets/toolkit';
+@import '~sass-toolkit/stylesheets/toolkit/kickstart';
 
 $slicer-breakpoints:        0        400px       600px      800px        1050px;
 

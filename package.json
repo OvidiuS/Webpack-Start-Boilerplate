@@ -19,6 +19,7 @@
     "node-sass": "^3.10.0",
     "postcss-loader": "^0.13.0",
     "sass-loader": "^4.0.2",
+    "sass-toolkit": "^2.10.0",
     "style-loader": "^0.13.1",
     "susy": "^2.2.12",
     "webpack": "^1.13.2"
