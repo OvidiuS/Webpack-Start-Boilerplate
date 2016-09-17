@@ -4,6 +4,8 @@
 @import '~sass-toolkit/stylesheets/toolkit';
 @import '~sass-toolkit/stylesheets/toolkit/kickstart';
 
+@import 'layout';
+
 //@include content-fade-in();
 
 .wf-loading {
@@ -17,11 +19,6 @@
     visibility: hidden;
   }
 }
-
-$slicer-breakpoints:        0        400px       600px      800px        1050px;
-
-//                          └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘ └────┬────
-// Slice numbers:                1           2           3           4           5
 
 $color: #ff0;
 $color2: #f00;
