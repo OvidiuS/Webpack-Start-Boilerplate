@@ -4,9 +4,17 @@ var webpack = require('webpack'),
     path = require('path'),
     BrowserSyncPlugin = require('browser-sync-webpack-plugin');
  
+//var lib_dir = __dirname + './dist/libs',
+//   node_dir = __dirname + './node_modules';
+
 module.exports = {
     debug: true,
     devtool: 'source-map',
+    resolve: {
+        alias: {
+            jquery: "jquery/src/jquery"
+        }
+    },   
     entry: {
         main: './src/scripts/index.js'
     },
@@ -21,13 +29,16 @@ module.exports = {
                 test: /\.css$/,
                 loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader")
             },
-            // Optionally extract less files
-            // or any other compile-to-css language
+            // extract SASS files
             {
                 test: /\.scss$/,
                 loader: ExtractTextPlugin.extract("style-loader", "css-loader?sourceMap!postcss-loader!sass-loader")
             }
-            // You could also use other loaders the same way. I. e. the autoprefixer-loader
+            // {
+            //     test: /\.js?$/,
+            //     loader: 'babel',
+            //     exclude: /node_modules/
+            // }
         ]
     },
      plugins: [
@@ -38,7 +49,11 @@ module.exports = {
 	      host: 'localhost',
 	      port: 3000,
 	      server: { baseDir: ['./'] }
-	    })
+	    }),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        })
     ],
     postcss: [
     	autoprefixer({
