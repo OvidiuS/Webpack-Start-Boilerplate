@@ -11,6 +11,15 @@ video {
   max-width: 100%;
   height: auto; }
 
+.wf-loading h1,
+.wf-loading h2,
+.wf-loading h3,
+.wf-loading h4,
+.wf-loading h5,
+.wf-loading h6,
+.wf-loading p {
+  visibility: hidden; }
+
 body {
   max-width: 80em;
   margin-left: auto;
@@ -18,7 +27,8 @@ body {
   background-color: #ff0;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  font-family: "Open Sans", sans; }
   body:after {
     content: " ";
     display: block;
